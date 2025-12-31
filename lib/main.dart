@@ -4,39 +4,29 @@ void main() {
   runApp(const MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
-      title: 'Flutter AI Learning',
-      theme: ThemeData(useMaterial3: true),
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Flutter AI Learning'),
+          title: const Text('First App'),
         ),
-        body: Container(
-          width: double.infinity,
-          padding: const EdgeInsets.all(12),
+        body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: const [
               Text(
-                'I am learning Flutter!',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
+                'Hello World!',
               ),
-              SizedBox(height: 16),
               Text(
-                'I will use AI to help me build my Flutter apps faster.',
-                textAlign: TextAlign.center,
+                'It\'s time to learn Flutter!',
               ),
             ],
           ),
